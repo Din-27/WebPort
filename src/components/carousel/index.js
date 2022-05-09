@@ -1,27 +1,23 @@
 import React from 'react'
-import a from '../../assets/birth.jpeg'
-import b from '../../assets/WhatsApp Image 2022-01-22 at 19.42.36.jpeg'
-import c from '../../assets/WhatsApp Image 2022-01-22 at 19.42.37 (2).jpeg'
-import d from '../../assets/WhatsApp Image 2022-01-22 at 19.42.37.jpeg'
-import e from '../../assets/WhatsApp Image 2022-01-22 at 19.42.38 (1).jpeg'
+import b from '../../assets/MyCV(New)_page-0002.jpg'
+import c from '../../assets/MyCV(New)_page-0003.jpg'
+import d from '../../assets/MyCV(New)_page-0004.jpg'
+import e from '../../assets/MyCV(New)_page-0005.jpg'
 
 function Carousel() {
   return (
     <div class="carousel rounded-box w-96">
         <div class="carousel-item w-1/2">
-            <img src={a} class="w-full" />
+            <img src={b} class="w-full" alt='' />
         </div> 
         <div class="carousel-item w-1/2">
-            <img src={b} class="w-full" />
+            <img src={c} class="w-full" alt='' />
         </div> 
         <div class="carousel-item w-1/2">
-            <img src={c} class="w-full" />
+            <img src={d} class="w-full" alt='' />
         </div> 
         <div class="carousel-item w-1/2">
-            <img src={d} class="w-full" />
-        </div> 
-        <div class="carousel-item w-1/2">
-            <img src={e} class="w-full" />
+            <img src={e} class="w-full" alt='' />
         </div> 
         {/* <div class="carousel-item w-1/2">
             <img src="https://api.lorem.space/image/game?w=256&h=400&hash=8B7BCDC2" class="w-full" />

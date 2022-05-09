@@ -4,8 +4,8 @@ import Carousel from '../carousel'
 
 function Home() {
   return (
-    <> 
-        <div class="hero min-h-screen bg-base-200">
+    <div className='bg-base-200 pb-40'> 
+        <div class="hero min-h-screen ">
             <div class="hero-content text-center">
                 <div class="max-w-3xl">
                     <h1 class="text-5xl font-bold">Hello there</h1>
@@ -14,10 +14,16 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="flex justify-center mb-40">
-        <Carousel/>
+        <div className="flex justify-center">
+          <Carousel/>
         </div>
-    </>
+        <div className="flex text-center justify-center mt-20">
+          <h1 className='font-bold decoration-red-800 underline'>SHIFT + SCROOL MOUSE FOR SEE CONTENT (WINDOWS)</h1>
+        </div>
+        <div className="flex justify-center">
+          <h1 className='font-bold decoration-red-800 underline'>SWIPE LEFT (PHONE)</h1>
+        </div>
+    </div>
   )
 }
 

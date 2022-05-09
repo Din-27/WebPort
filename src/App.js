@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import { Footer, Home, Navbar} from "./components";
 
-function App() {
+function AllContents() {
   const [alertDai, setAlertDai] = useState(false)
   const [alertDai2, setAlertDai2] = useState(false)
   return (
-  <div class="mockup-window min-h-screen border bg-base-200">
+  <div class="min-h-screen mockup-window border bg-base-200">
     <Navbar setAlert={setAlertDai} setAlert2={setAlertDai2}/>
     {alertDai && 
     <div class="alert alert-warning shadow-lg" onClick={()=>setAlertDai(false)}>
@@ -27,4 +27,13 @@ function App() {
   );
 }
 
-export default App;
+function App() {
+
+  return (
+  <>
+    <AllContents/>
+  </>
+  );
+}
+
+export default App
