@@ -1,9 +1,11 @@
 import React, {useState} from "react";
-import { Footer, Home, Navbar} from "./components";
+import { Footer, Home, Login, Navbar, Stat} from "./components";
+import { Route, Routes } from 'react-router-dom'
 
 function AllContents() {
   const [alertDai, setAlertDai] = useState(false)
   const [alertDai2, setAlertDai2] = useState(false)
+
   return (
   <div class="min-h-screen mockup-window border bg-base-200">
     <Navbar setAlert={setAlertDai} setAlert2={setAlertDai2}/>
@@ -22,6 +24,9 @@ function AllContents() {
       </div>
     </div>}
     <Home/>
+    <div className="flex justify-center mb-10">
+      <Stat/>
+    </div>
     <Footer/>
   </div>
   );
@@ -30,9 +35,10 @@ function AllContents() {
 function App() {
 
   return (
-  <>
-    <AllContents/>
-  </>
+  <Routes>
+    <Route path='/' exact element={<AllContents/>}/>
+    <Route path='/login' exact element={<Login/>}/>
+  </Routes>
   );
 }
 

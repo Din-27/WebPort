@@ -4,7 +4,7 @@ import Carousel from '../carousel'
 
 function Home() {
   return (
-    <div className='bg-base-200 pb-40'> 
+    <div className='bg-base-200 pb-20'> 
         <div class="hero min-h-screen ">
             <div class="hero-content text-center">
                 <div class="max-w-3xl">
@@ -17,11 +17,15 @@ function Home() {
         <div className="flex justify-center">
           <Carousel/>
         </div>
-        <div className="flex text-center justify-center mt-20">
-          <h1 className='font-bold decoration-red-800 underline'>SHIFT + SCROOL MOUSE FOR SEE CONTENT (WINDOWS)</h1>
+        <div className="flex text-center justify-center mt-10">
+          <kbd class="kbd bg-base-100">shift</kbd>
+          +
+          <kbd class="kbd bg-base-100">scrool mouse</kbd>
         </div>
-        <div className="flex justify-center">
-          <h1 className='font-bold decoration-red-800 underline'>SWIPE LEFT (PHONE)</h1>
+        <div className="flex justify-center mt-10">
+          <kbd class="kbd bg-base-100">swipe</kbd>
+          +
+          <kbd class="kbd bg-base-100">left</kbd>
         </div>
     </div>
   )

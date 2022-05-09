@@ -1,8 +1,9 @@
 import Carousel from "./carousel";
 import Footer from "./footer";
 import Home from "./home";
+import Login from "./login";
 import Navbar from "./navbar";
-import SideBar from "./sidebar";
+import Stat from "./stat";
 
 
-export {Navbar, SideBar, Home, Carousel, Footer}
+export {Navbar, Home, Carousel, Footer, Login, Stat}
