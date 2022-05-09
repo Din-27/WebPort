@@ -1,10 +1,18 @@
 import React, {useState} from "react";
-import { Footer, Home, Login, Navbar, Stat} from "./components";
-import { Route, Routes } from 'react-router-dom'
+import { Footer, Home, Login, Navbar, Stat, Avatar, Table} from "./components";
+import { Route, Routes, useNavigate } from 'react-router-dom'
+import Rating from "./components/rating";
 
 function AllContents() {
+
+  const navigate = useNavigate()
+
   const [alertDai, setAlertDai] = useState(false)
   const [alertDai2, setAlertDai2] = useState(false)
+
+  const handleLogin = () => {
+    navigate('/login')
+  }
 
   return (
   <div class="min-h-screen mockup-window border bg-base-200">
@@ -23,7 +31,16 @@ function AllContents() {
         <span>12 unread messages. Tap to see.</span>
       </div>
     </div>}
-    <Home/>
+    <Home login={handleLogin}/>
+    <div className="flex justify-center mb-10">
+      <Avatar/>
+    </div>
+      <div className="flex justify-center mt-5 mb-5">
+        <Rating/>
+      </div>
+    <div className="flex justify-center mb-10">
+      <Table/>
+    </div>
     <div className="flex justify-center mb-10">
       <Stat/>
     </div>
