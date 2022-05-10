@@ -2,22 +2,12 @@ import React from 'react'
 import Carousel from '../carousel'
 
 
-function Home({login}) {
+function Home({start}) {
   return (
     <div className='bg-base-200 pb-20 container-fluid'> 
       <div class="hero my-10">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <Carousel/>
-          {/* <div className="flex text-center justify-center mt-10">
-            <kbd class="kbd bg-base-100">shift</kbd>
-            +
-            <kbd class="kbd bg-base-100">scrool mouse</kbd>
-          {/* </div>
-          <div className="flex justify-center mt-10">
-            <kbd class="kbd bg-base-100">swipe</kbd>
-            +
-            <kbd class="kbd bg-base-100">left</kbd>
-  </div> */}
           <div>
             <h1 class="text-5xl font-bold">Herdiyana Portofolio!</h1>
             <p class="py-6">
@@ -28,7 +18,7 @@ function Home({login}) {
                     vocational high school. I'm currently attending
                     DumbWays online bootcamp in 6 weeks
             </p>
-            <button class="btn btn-primary" onClick={login} >Get Started</button>
+            <button class="btn btn-primary" onClick={start} >Get Started</button>
           </div>
         </div>
       </div>

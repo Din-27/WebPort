@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Footer from '../footer'
+import Footer from '../../footer'
 
 function Login() {
 

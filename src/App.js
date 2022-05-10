@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Footer, Home, Login, Navbar, Stat, Avatar, Table} from "./components";
+import { Footer, Home, Login, Navbar, Stat, Avatar, Table, Portofo} from "./components";
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Rating from "./components/rating";
 
@@ -10,8 +10,8 @@ function AllContents() {
   const [alertDai, setAlertDai] = useState(false)
   const [alertDai2, setAlertDai2] = useState(false)
 
-  const handleLogin = () => {
-    navigate('/login')
+  const handleStart = () => {
+    navigate('/portofolio')
   }
 
   return (
@@ -32,7 +32,7 @@ function AllContents() {
       </div>
     </div>}
     <div className="w-full">
-      <Home login={handleLogin}/>
+      <Home start={handleStart}/>
     </div>
     <div className="flex justify-center mb-10">
       <Avatar/>
@@ -57,6 +57,7 @@ function App() {
   <Routes>
     <Route path='/' exact element={<AllContents/>}/>
     <Route path='/login' exact element={<Login/>}/>
+    <Route path='/portofolio' exact element={<Portofo/>}/>
   </Routes>
   );
 }
