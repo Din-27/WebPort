@@ -38,7 +38,7 @@ function AllContents() {
       <div className="flex justify-center mt-5 mb-5">
         <Rating/>
       </div>
-    <div className="flex justify-center mb-10">
+    <div className="mb-10">
       <Table/>
     </div>
     <div className="flex justify-center mb-10">

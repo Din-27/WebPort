@@ -2,7 +2,7 @@ import React from 'react'
 
 function Table() {
   return (
-    <div class="overflow-x-auto w-full">
+    <div class="overflow-x-auto w-full flex justify-center">
         <table class="table w-96">
             {/* <thead>
             <tr>
