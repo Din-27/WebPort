@@ -3,7 +3,7 @@ import React from 'react'
 function Avatar() {
   return (
     <div className="flex justify-center">
-          <div class="avatar-group -space-x-6">
+          <div class="avatar-group -space-x-4">
             <div class="avatar">
               <div class="w-12">
                 <img src="https://api.lorem.space/image/face?hash=53273" />

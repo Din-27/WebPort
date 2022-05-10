@@ -31,16 +31,18 @@ function AllContents() {
         <span>12 unread messages. Tap to see.</span>
       </div>
     </div>}
-    <Home login={handleLogin}/>
+    <div className="w-full">
+      <Home login={handleLogin}/>
+    </div>
     <div className="flex justify-center mb-10">
       <Avatar/>
     </div>
-      <div className="flex justify-center mt-5 mb-5">
-        <Rating/>
-      </div>
-    <div className="mb-10">
+    <div className="mb-5">
       <Table/>
     </div>
+      <div className="flex justify-center mb-10">
+        <Rating/>
+      </div>
     <div className="flex justify-center mb-10">
       <Stat/>
     </div>

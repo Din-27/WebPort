@@ -6,7 +6,7 @@ import e from '../../assets/MyCV(New)_page-0005.jpg'
 
 function Carousel() {
   return (
-    <div class="carousel rounded-box w-96">
+    <div class="carousel rounded-box w-full">
         <div class="carousel-item w-1/2">
             <img src={b} class="w-full" alt='' />
         </div> 
