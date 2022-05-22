@@ -3,16 +3,11 @@ import { Footer, Home, Login, Navbar, Stat, Avatar, Table, Portofo} from "./comp
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Rating from "./components/rating";
 
-function AllContents() {
-
-  const navigate = useNavigate()
+function AllContents({handleStart}) {
 
   const [alertDai, setAlertDai] = useState(false)
   const [alertDai2, setAlertDai2] = useState(false)
 
-  const handleStart = () => {
-    navigate('/portofolio')
-  }
 
   return (
   <div class="min-h-screen mockup-window border bg-base-200">
@@ -52,13 +47,16 @@ function AllContents() {
 }
 
 function App() {
+  const [change, setChange] = useState(false)
+
+  const handleStart = () => {
+    setChange(true)
+  }
 
   return (
-  <Routes>
-    <Route path='/' exact element={<AllContents/>}/>
-    <Route path='/login' exact element={<Login/>}/>
-    <Route path='/portofolio' exact element={<Portofo/>}/>
-  </Routes>
+  <div>
+    {change ? <Portofo/> : <AllContents handleStart={handleStart}/>}
+  </div>
   );
 }
 

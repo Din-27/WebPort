@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../carousel'
-
+import Fade from 'react-reveal/Fade'
 
 function Home({start}) {
   return (
@@ -9,16 +9,16 @@ function Home({start}) {
         <div class="hero-content flex-col lg:flex-row-reverse">
             <Carousel/>
           <div>
-            <h1 class="text-5xl font-bold">Herdiyana Portofolio!</h1>
-            <p class="py-6">
-              I'am a Fullstack Developer who loves programming
-                    especially JavaScript stacks and modern computers
-                    technology. have a lot of experience in
-                    programming since getting to know coding in
-                    vocational high school. I'm currently attending
-                    DumbWays online bootcamp in 6 weeks
-            </p>
-            <button class="btn btn-primary" onClick={start} >Get Started</button>
+              <h1 class="text-5xl font-bold">Herdiyana Portofolio!</h1>
+              <p class="py-6">
+                I'am a Fullstack Developer who loves programming
+                      especially JavaScript stacks and modern computers
+                      technology. have a lot of experience in
+                      programming since getting to know coding in
+                      vocational high school. I'm currently attending
+                      DumbWays online bootcamp in 6 weeks
+              </p>
+              <button class="btn btn-primary" onClick={start} >Get Started</button>
           </div>
         </div>
       </div>
