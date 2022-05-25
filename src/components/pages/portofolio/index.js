@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 import My from '../../../assets/My.jpg'
 import BtnPage from '../../button-page'
 import BgLife from '../background-life'
-
 
 
 // const dataSaya = [
@@ -22,9 +22,8 @@ import BgLife from '../background-life'
 //     'Teknisi Telepon Seluler'
 // ]
 
-function Portofo() {
+function Portofo({handleNext, handleLess}) {
     
-    const [next, setNext] = useState(false)
 
   return (
     <div class="min-h-screen mockup-window py-8 px-6 border bg-base-200 pb-10">
@@ -48,10 +47,8 @@ function Portofo() {
                 </div>
             </div>
             <div className="flex justify-center sm:mt-10 mb-5">
-                {next ? <p className='title-progress font-bold text-2xl'>My Education history :</p> :
-                <p className='title-progress font-bold text-2xl'>My Knowledge percentage :</p>}
+                <p className='title-progress font-bold text-2xl'>My Knowledge percentage :</p>
             </div>
-            {next ? <BgLife/> :
             <div className="flex justify-center sm:mt-10">
                 <div class="grid font-bold sm:grid-flow-col sm:grid-rows-4 sm:gap-2 ml-8 place-content-around">
                     <div className='mr-20'>
@@ -103,8 +100,8 @@ function Portofo() {
                         <progress class="progress progress-primary hover:progress-warning w-56" value="80" max="100"></progress><span className='cursor-pointer'>80%</span>
                     </div>
                 </div>
-            </div>}
-            <BtnPage setNext={()=>setNext(true)} setLess={()=>setNext(false)}/>
+            </div>
+            <BtnPage setNext={handleNext} setLess={handleLess}/>
         </div>
     </div>
   )

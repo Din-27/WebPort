@@ -1,11 +1,11 @@
 import Avatar from "./avatar";
-import Carousel from "./carousel";
+import BtnPage from "./button-page";
 import Footer from "./footer";
 import Home from "./home";
 import Navbar from "./navbar";
-import { Login, Portofo } from "./pages";
+import { BgLife, Login, Portofo, Project, Contact } from "./pages";
 import Stat from "./stat";
 import Table from "./table";
 
 
-export { Navbar, Home, Carousel, Footer, Login, Stat, Avatar, Table, Portofo }
+export { Navbar, Home, Footer, Login, Stat, Avatar, Table, Portofo, BgLife, BtnPage, Project, Contact }

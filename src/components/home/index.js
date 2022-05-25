@@ -1,13 +1,12 @@
 import React from 'react'
-import Carousel from '../carousel'
-import Fade from 'react-reveal/Fade'
+import cv from '../../assets/cv.png'
 
 function Home({start}) {
   return (
     <div className='bg-base-200 pb-20 container-fluid'> 
       <div class="hero my-10">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <Carousel/>
+            <img src={cv} alt="" />
           <div>
               <h1 class="text-5xl font-bold">Herdiyana Portofolio!</h1>
               <p class="py-6">
