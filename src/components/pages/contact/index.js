@@ -4,10 +4,10 @@ import icon from "../../../assets/flat.png"
 
 const Mailto = ({submit, pindah, handle}) => {
     return(
-        <div className="flex flex-row" onClick={handle}>
-            <a
+        <div className="flex flex-row">
+            <button onClick={handle}><a
             href={submit} 
-            class="btn btn-primary mt-2 rounded-none">Send</a>
+            class="btn btn-primary mt-2 rounded-none">Send</a></button>
             <button class="btn btn-primary mt-2 rounded-none ml-2" onClick={pindah}>Cancel</button>
         </div>
     )
